@@ -15,7 +15,7 @@ function mouseClicked() {
 }
 
 function preload() {
-	song = loadSound("bangarang.mp3");
+	song = loadSound("littlethings.mp3");
 }
 
 function setup() {
