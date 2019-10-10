@@ -18,12 +18,15 @@ function preload() {
 	song = loadSound("littlethings.mp3");
 }
 
+window.onload = function() {
+	song.play();
+}
+
 function setup() {
 	var cnv = createCanvas(window.innerWidth, window.innerHeight);
 	var x = (windowWidth - width) / 2;
 	var y = (windowHeight - height) / 2;
 	cnv.position(x, y);
-	song.play();
 	amp = new p5.Amplitude();
 	amp.setInput(song);
 }
